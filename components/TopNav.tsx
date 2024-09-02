@@ -1,8 +1,9 @@
 "use client";
 
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { useState } from "react";
+import { FcMenu } from "react-icons/fc";
 
 const TopNav = () => {
   const [isClick, setIsClick] = useState<boolean>(false);
@@ -48,10 +49,12 @@ const TopNav = () => {
                 </Link>
               </Flex>
             </Box>
-            <Box className="md:hidden flex items-center">
-              <Button onClick={handleToggle} className="text-white">
+            <Box className="md:hidden flex items-center justify-center gap-2" onClick={handleToggle}>
+              {/* <Button  className="text-white">
                 Menu
-              </Button>
+              </Button> */}
+              <FcMenu style={{color: '#ccc', fontSize: '15px'}} />
+              <Text textTransform={'uppercase'} fontSize={'14px'} color={'#ccc'}>Menu</Text>
             </Box>
           </Flex>
         </Box>
