@@ -14,6 +14,7 @@ const Footer = () => {
         justifyContent={"center"}
         alignItems={"center"}
         bottom={0}
+        overflowX={'hidden'}
       >
         <Flex
           //   bg="#000"

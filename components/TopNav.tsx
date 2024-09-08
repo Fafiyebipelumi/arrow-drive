@@ -13,7 +13,7 @@ const TopNav = () => {
   };
   return (
     <>
-      <Box bg={"black"}>
+      <Box bg={"black"} overflowX={'hidden'}>
         <Box marginX={"auto"} px={4} className="sm:px-6 lg:px-8">
           <Flex
             alignItems={"center"}
@@ -49,7 +49,7 @@ const TopNav = () => {
                 </Link>
               </Flex>
             </Box>
-            <Box className="md:hidden flex items-center justify-center gap-2" onClick={handleToggle}>
+            <Box className="md:hidden flex items-center justify-center gap-2 cursor-pointer" onClick={handleToggle}>
               {/* <Button  className="text-white">
                 Menu
               </Button> */}

@@ -6,7 +6,7 @@ import { VscWindow } from "react-icons/vsc";
 
 const Services = () => {
   return (
-    <Box>
+    <Box overflowX={'hidden'}>
       <Text
         color={"#1052FE"}
         className="md:text-[24px] text-[16px]"
@@ -17,7 +17,7 @@ const Services = () => {
       >
         Services
       </Text>
-      <Box px={4} mt={10}>
+      <Box px={4} mt={10} mx={'auto'}>
         <Flex className="items-center mt-7 md:justify-center justify-center flex-col md:flex-row">
           <Box
             marginX={10}

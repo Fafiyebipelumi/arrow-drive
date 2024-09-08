@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "",
   authors: {
     name: "JAY25 InteServe",
-    url: "",
+    url: "jay25inteserve.com",
   },
   applicationName: "Arrow Drive",
 };
