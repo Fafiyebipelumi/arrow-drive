@@ -9,8 +9,8 @@ const Services = () => {
   return (
     <Box overflowX={"hidden"}>
       <Text
-        color={"#1052FE"}
         className="md:text-[24px] text-[16px]"
+        color={"#1052FE"}
         textAlign={"center"}
         fontWeight={"bold"}
         textTransform={"uppercase"}
