@@ -7,10 +7,10 @@ import Hero from '../Hero'
 const HomePage = () => {
   return (
     <>
-      <TopNav />
+      {/* <TopNav /> */}
       <Hero />
       <Services />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

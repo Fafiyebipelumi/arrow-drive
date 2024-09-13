@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ReactQueryProvider from "@/Providers/ReactQueryProvider";
 import ChakraProviders from "@/Providers/ChakraProvider";
+import TopNav from "@/components/TopNav";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ReactQueryProvider>
-          <ChakraProviders>{children}</ChakraProviders>
+          <ChakraProviders>
+            <TopNav />
+            {children}
+            <Footer />
+          </ChakraProviders>
         </ReactQueryProvider>
       </body>
     </html>
