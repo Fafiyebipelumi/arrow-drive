@@ -12,6 +12,7 @@ import {
 import { Data } from "../data";
 import Link from "next/link";
 import LoadingIndicator from "@/components/LoadingIndicator";
+import Image from "next/image";
 
 const page = () => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -68,11 +69,11 @@ const page = () => {
                 justifyContent={"flex-start"}
                 gap={"25px"}
               >
-                <Avatar
+                {info.image ? <Image src={info.image} alt="" width={60} height={60} className="w-14 h-14 rounded-[50%] object-cover flex items-center justify-center" /> : <Avatar
                   name={`${info.firstName} ${info.lastName}`}
                   size={["md", "lg", "lg"]}
                   bg={"#1052FE"}
-                />
+                />}
                 <Box>
                   <Text fontSize={["18px", "20px", "20px"]} fontWeight={"bold"}>
                     {info.firstName} {info.lastName}

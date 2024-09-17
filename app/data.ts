@@ -14,6 +14,18 @@ export const Data = [
     },
     {
         id: uuidv4(),
+        firstName: 'Emmanuel',
+        lastName: 'Fasina',
+        occupation: 'Software Engineer',
+        image: '/img/kay.jpg',
+        details: {
+            lives_in: 'Aketi Estate, Akure',
+            works_at: 'JAY25InteServe Tech',
+            from: 'Akure, Ondo State.'
+        }
+    },
+    {
+        id: uuidv4(),
         firstName: 'Demilade',
         lastName: 'Taiwo',
         occupation: 'Backend Engineer',
@@ -28,6 +40,7 @@ export const Data = [
         firstName: 'Gbajabi',
         lastName: 'Amila',
         occupation: 'Entrepreneur',
+        image: '/img/jay25.jpg',
         details: {
             lives_in: 'Lagos Island, Lagos',
             works_at: 'Arrow Flow',
@@ -36,20 +49,10 @@ export const Data = [
     },
     {
         id: uuidv4(),
-        firstName: 'Emmanuel',
-        lastName: 'Fasina',
-        occupation: 'Software Engineer',
-        details: {
-            lives_in: 'Aketi Estate, Akure',
-            works_at: 'JAY25InteServe Tech',
-            from: 'Akure, Ondo State.'
-        }
-    },
-    {
-        id: uuidv4(),
         firstName: 'Oluwpelumi',
         lastName: 'Fafiyebi',
         occupation: 'Frontend Engineer',
+        image: '/img/Fafy.jpg',
         details: {
             lives_in: 'Oroki Avenue, Osogbo',
             works_at: 'JAY25InteServe Tech',
