@@ -47,7 +47,7 @@ const TopNav = () => {
                 <Link href="/" className="text-white">
                   Media
                 </Link>
-                <Link href="/" className="text-white">
+                <Link href="/connect" className="text-white">
                   Connect
                 </Link>
                 <Link href="/" className="text-white">
@@ -79,7 +79,7 @@ const TopNav = () => {
               <Link href="/" className="text-white text-sm block">
                 Media
               </Link>
-              <Link href="/" className="text-white text-sm block">
+              <Link href="/connect" className="text-white text-sm block">
                 Connect
               </Link>
               <Link href="/" className="text-white text-sm block">

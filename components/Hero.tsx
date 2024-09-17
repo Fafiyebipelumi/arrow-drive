@@ -11,7 +11,7 @@ const Hero = () => {
       <motion.div
       initial={{y: "100vh"}}
       animate={{y: 0}}
-      transition={{type: "spring", stifness: 100, damping: 15, duration: 1}}
+      transition={{type: "spring", stifness: 100, damping: 15 }}
       >
         <Box overflowX={"hidden"} w={["100%", "100%", "50%"]}>
           <Box bg={"#1052FE"} paddingX={"20px"} margin={"60px"}>

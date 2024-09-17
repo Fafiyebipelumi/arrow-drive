@@ -36,7 +36,7 @@ const page = () => {
       <Box>
         <Box marginY={"30px"}>
           <Text
-            fontSize={["18px", "20px", "30px"]}
+            fontSize={["21px", "25px", "30px"]}
             color={"#1052FE"}
             textAlign={"center"}
             fontWeight={"bold"}
@@ -44,7 +44,7 @@ const page = () => {
           >
             Connect with others.
           </Text>
-          <Text fontSize={["10px", "12px", "15px"]} textAlign={"center"}>
+          <Text fontSize={["14px", "15px", "18px"]} textAlign={"center"}>
             This is a meeting room where you can connect professional to seek
             consultation in different fields of specialization.
           </Text>
@@ -70,14 +70,14 @@ const page = () => {
               >
                 <Avatar
                   name={`${info.firstName} ${info.lastName}`}
-                  size={["sm", "md", "md"]}
+                  size={["md", "lg", "lg"]}
                   bg={"#1052FE"}
                 />
                 <Box>
                   <Text fontSize={["18px", "20px", "20px"]} fontWeight={"bold"}>
                     {info.firstName} {info.lastName}
                   </Text>
-                  <Text fontSize={["10px", "12px", "15px"]}>
+                  <Text fontSize={["12px", "12px", "15px"]}>
                     {info.occupation}
                   </Text>
                   {/*  */}

@@ -10,10 +10,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arrow Drive",
-  description: "",
+  description: "Arrow Drive is designed to give you an easy and better access to the world around you by maintaining your daily cost of living.",
   authors: {
     name: "JAY25 InteServe",
     url: "jay25inteserve.com",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
   applicationName: "Arrow Drive",
 };
