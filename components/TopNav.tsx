@@ -2,15 +2,27 @@
 
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FcMenu } from "react-icons/fc";
 
 const TopNav = () => {
   const [isClick, setIsClick] = useState<boolean>(false);
+  const navRef = useRef<HTMLDivElement | null>(null)
 
   const handleToggle = () => {
     setIsClick(!isClick);
   };
+
+  useEffect(() => {
+    if (navRef.current) {
+      if (isClick) {
+        navRef.current.style.height = `${navRef.current.scrollHeight}px`
+      } else {
+        navRef.current.style.height = '0px'
+      }
+    }
+  }, [isClick]);
+
   return (
     <>
       <Box bg={"black"} overflowX={'hidden'}>
@@ -59,7 +71,7 @@ const TopNav = () => {
           </Flex>
         </Box>
         {isClick && (
-          <Box className="md:hidden">
+          <Box ref={navRef} className={`md:hidden transition-all duration-500 ease-in-out transform ${isClick ? 'block opacity-100 scale-y-100 max-h-full' : 'max-h-0 opacity-0 scale-y-0'} origin-top`} style={{transformOrigin: 'top center'}}>
             <Box px={2} pt={3} pb={3} my={3} className="sm:px-3 space-y-4">
               <Link href="/" className="text-white text-sm block">
                 Flow

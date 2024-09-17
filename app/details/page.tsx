@@ -1,13 +1,36 @@
+"use client";
+
 import { Avatar, AvatarBadge, Box, Button, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaPlus } from "react-icons/fa6";
 import { IoChatbubbles } from "react-icons/io5";
 import { LuHome } from "react-icons/lu";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { IoLocationOutline } from "react-icons/io5";
+import { usePathname, useRouter } from "next/navigation";
+import LoadingIndicator from "@/components/LoadingIndicator";
 
 const page = () => {
+
+    const [loading, setLoading] = useState<boolean>(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false)
+      }, 3000);
+    }
+
+    handleRouteChange();
+    return;
+  }, [pathname])
+
   return (
+    <>
+    {loading && <LoadingIndicator />}
     <Box marginTop={16}>
       <Box className="w-full bg-white shadow-md rounded-md my-8 flex items-center justify-evenly flex-col md:flex-row gap-8">
         <Box className="flex items-center flex-col justify-center gap-4">
@@ -57,6 +80,7 @@ const page = () => {
         </Box>
       </Box>
     </Box>
+    </>
   );
 };
 
